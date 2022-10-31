@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="road">
+        <div class="line"></div>
+        <div class="car" id="red"></div>
+        <div class="car delay3" id="red"></div>
+        <div class="car delay5" id="red"></div>
+        <div class="car delay7" id="pink"></div>
+        <div class="car delay18" id="orange"></div>
+    </div>
+    <div class="roundabout">
+
+    </div>
+    <div class="content">
+        <h1>We are the car dealer of future</h1>
+        <h2>Check out our new models</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Quaerat, quod, atque, aperiam, id, omnis voluptatem excepturi 
+            voluptates ipsum voluptas quibusdam quisquam doloremque 
+            molestiae ipsam quas doloribus laborum accusantium 
+            eaque. Necessitatibus.
+        </p>
+    </div>
+    <div class="nav">
+        <button class="modelsbtn"><i class="fa fa-car"></i></button>
+        <button class="announcements"><i class="fa fa-bullhorn"></i></button>
+        <button class="contactus"><i class="fa fa-envelope"></i></button>
+    </div>
+    <div class="models">
+        <a href="#" onclick="closemodelswidget()" class="close"><i class="fa fa-times"></i></a>
+        <h2>Our models:</h2>
+        <div class="grid">
+            
+        </div>
+    </div>
+    <div class="modeloverlay">
+        <a class="close-overlay" onclick="hideOverlay()"><i class="fa fa-times"></i></a>
+        <div class="model">
+            <div class="model-content">
+                <h2 class="modelname">Model name</h2>
+                <p class="modeldescription">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Quaerat, quod, atque, aperiam, id, omnis voluptatem excepturi 
+                    voluptates ipsum voluptas quibusdam quisquam doloremque 
+                    molestiae ipsam quas doloribus laborum accusantium 
+                    eaque. Necessitatibus.
+                </p>
+                <p class="modelprice">Model Price</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="model-image">
+                <img class="modelimg" src="https://openclipart.org/download/190175/SimpleOrangeCarTopView.svg"></img>
+            </div>
+        </div>
+    </div>
+    <script src="js/clickablecar.js"></script>
+</body>
+</html>
