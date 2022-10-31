@@ -2,13 +2,22 @@
   --background: rgb(65, 82, 235);
 }
 
+* {
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: var(--background);
   display: flex;
-  min-height: 100vh;
+  height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .road {
@@ -18,6 +27,7 @@ body {
   height: 200px;
   display: flex;
   align-self: center;
+  justify-self: center;
   background: rgb(0, 0, 0);
   transform: rotate(50deg);
 }
@@ -171,6 +181,7 @@ body {
   grid-template-columns: auto auto auto;
 }
 .models .grid a {
+  width: 70%;
   padding: 20px;
   margin: 5px;
   color: rgb(0, 0, 0);
@@ -179,7 +190,7 @@ body {
   border-radius: 10px;
 }
 .models .grid a img {
-  max-width: 130px;
+  width: 100px;
   height: auto;
 }
 
@@ -303,12 +314,53 @@ body {
     opacity: 0;
   }
 }
+@media screen and (max-width: 1200px) {
+  .models .grid {
+    grid-template-columns: auto auto;
+  }
+  .content {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .models {
+    width: 80%;
+  }
+  .road {
+    left: -150px;
+  }
+  .content {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .models {
+    width: 90%;
+  }
+  .road {
+    left: -300px;
+  }
+  .content {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .models {
+    width: 100%;
+  }
+  .road {
+    left: -350px;
+  }
+  .content {
+    width: 80%;
+  }
+}
 .madeby {
   position: absolute;
   bottom: 0;
   right: 0;
   padding: 10px;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   color: rgb(255, 255, 255);
   text-align: center;
   margin: 0;
