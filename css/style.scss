@@ -147,7 +147,7 @@ body {
     }
 }
 
-.models {
+.popout {
     position: absolute;
     right: 0;
     top: 2%;
@@ -178,7 +178,8 @@ body {
         font-size: 1.5rem;
         text-align: center;
     }
-    
+}
+.models{
     .grid {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -200,9 +201,30 @@ body {
     }
 }
 
-.models:hover {
-    display: block;
-    animation: fadein 0.5s;
+.announcements {
+    padding-bottom: 10px;
+    .announcement {
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        background: rgb(245, 245, 245);
+        border-radius: 10px;
+
+        h3 {
+            margin-left: 10px;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+
+        p {
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-align: left;
+            margin: 0 15px 10px 15px;
+        }
+    }
 }
 
 .modeloverlay {
@@ -323,7 +345,7 @@ body {
     }
 }
 @media screen and (max-width: 800px) {
-    .models {
+    .popout {
         width: 80%;
     }
 
@@ -335,7 +357,7 @@ body {
     }
 }
 @media screen and (max-width: 600px) {
-    .models {
+    .popout {
         width: 90%;
     }
 
@@ -348,7 +370,7 @@ body {
     }
 }
 @media screen and (max-width: 400px) {
-    .models {
+    .popout {
         width: 100%;
     }
 

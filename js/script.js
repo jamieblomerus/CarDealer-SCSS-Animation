@@ -1,6 +1,6 @@
 /*
-Author:     Jamie Blomerus
-Date:		2022-10-28
+Author:         Jamie Blomerus
+Last updated:   2022-10-31
 */
 
 const models = {
@@ -81,6 +81,22 @@ function closemodelswidget() {
     modelswidget.style.animation = "fadeout 0.5s";
     setTimeout(function() {
         modelswidget.style.display = "none";
+    }, 500);
+}
+
+// Announcement button reveal
+var announcementbutton = document.getElementsByClassName("announcementsbtn").item(0);
+var announcement = document.getElementsByClassName("announcements").item(0);
+
+announcementbutton.addEventListener("click", function() {
+    announcement.style.display = "block";
+    announcement.style.animation = "fadein 0.5s";
+});
+
+function closeannouncementswidget() {
+    announcement.style.animation = "fadeout 0.5s";
+    setTimeout(function() {
+        announcement.style.display = "none";
     }, 500);
 }
 
