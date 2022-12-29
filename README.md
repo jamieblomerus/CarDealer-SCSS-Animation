@@ -29,7 +29,7 @@ We welcome contributions to this project. If you have an idea for an improvement
 This project was created by [Jamie Blomerus](https://github.com/jamieblomerus).
 
 Special thanks to the following users for their contributions to the project:
-  - Vladimir Blomerus (@xvlblo22)
+  - Vladimir Blomerus (@vladimirblomerus)
 ## License
 
 This project is licensed under the GPLv3 License - see the [LICENSE](https://github.com/jamieblomerus/CarDealer-SCSS-Animation/blob/main/LICENSE) file for details.
