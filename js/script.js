@@ -1,6 +1,6 @@
 /*
-Author:         Jamie Blomerus
-Last updated:   2022-10-31
+File: js/script.js
+Last updated:   2022-12-31
 */
 
 const models = {
@@ -97,6 +97,22 @@ function closeannouncementswidget() {
     announcement.style.animation = "fadeout 0.5s";
     setTimeout(function() {
         announcement.style.display = "none";
+    }, 500);
+}
+
+//Contact us button action
+var contactusbutton = document.getElementsByClassName("contactusbtn").item(0);
+var contactwidget = document.getElementsByClassName("contact").item(0);
+
+contactusbutton.addEventListener("click", function() {
+    contactwidget.style.display = "block";
+    contactwidget.style.animation = "fadein 0.5s";
+});
+
+function closecontactuswidget() {
+    contactwidget.style.animation = "fadeout 0.5s";
+    setTimeout(function() {
+        contactwidget.style.display = "none";
     }, 500);
 }
 
