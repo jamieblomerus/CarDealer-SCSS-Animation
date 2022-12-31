@@ -227,6 +227,39 @@ body {
     }
 }
 
+.contact {
+    form {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            display: block;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+
+        input, textarea {
+            display: block;
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 5px 0;
+            text-align: left;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .contactsubmitbtn {
+            font-size: 1.5rem;
+            width: fit-content;
+            align-self: center;
+            padding: 7.5px 15px;
+        }
+    }
+}
+
 .modeloverlay {
     position: absolute;
     width: 100%;

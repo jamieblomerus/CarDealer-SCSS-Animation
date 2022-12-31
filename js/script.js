@@ -100,6 +100,23 @@ function closeannouncementswidget() {
     }, 500);
 }
 
+//Contact us button action
+var contactusbutton = document.getElementsByClassName("contactusbtn").item(0);
+console.log(contactusbutton);
+var contactwidget = document.getElementsByClassName("contact").item(0);
+
+contactusbutton.addEventListener("click", function() {
+    contactwidget.style.display = "block";
+    contactwidget.style.animation = "fadein 0.5s";
+});
+
+function closecontactuswidget() {
+    contactwidget.style.animation = "fadeout 0.5s";
+    setTimeout(function() {
+        contactwidget.style.display = "none";
+    }, 500);
+}
+
 //Credit
 var madeby = document.createElement("p");
 madeby.classList.add("madeby");
