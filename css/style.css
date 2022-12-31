@@ -241,11 +241,13 @@ body {
 }
 .contact form .contactsubmitbtn {
   font-size: 1.5rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  background-color: #bdbdbd;
+  width: 50%;
   align-self: center;
-  padding: 7.5px 15px;
+  padding: 7.5px 25px;
+  border: none;
+  border-radius: 7px;
+  text-align: center;
 }
 
 .modeloverlay {
